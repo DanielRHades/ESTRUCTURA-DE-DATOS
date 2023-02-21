@@ -1,0 +1,26 @@
+package a1;
+
+public class A1 {
+
+    public static void main(String[] args) {
+        int p1=4;
+        int p2=2;
+
+        int array[][] = {{2, 10, 7, 15, 14}, 
+            {19, 13, 16, 3, 4}, 
+            {9, 12, 8, 11, 5}};
+        //Recorremos el array multidimensional
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                if(j==p1-1){
+                    System.out.print(array[i][p2-1]+"\t");
+                }else if(j==p2-1){
+                    System.out.print(array[i][p1-1]+"\t");
+                }else
+                
+                System.out.print(array[i][j]+"\t");    
+            }
+         System.out.println("");
+        }
+    }
+}
