@@ -1,0 +1,16 @@
+
+package ejercicio1;
+
+import javax.swing.JOptionPane;
+
+public class Ejercicio1 {
+    public static void main(String[] args) {
+        String palabra=JOptionPane.showInputDialog("Dame una oracion");
+        int c= palabra.length();
+        int cse=palabra.replace(" ", "").length();
+        int ce = (palabra.length() - palabra.replace(" ", "").length());
+        System.out.println("Tu oracion es: "+ palabra);
+        System.out.println("La cantidad de caracteres es de: " +cse);
+        System.out.println("La cantidad de espacios es de: " +ce);
+    }
+}
