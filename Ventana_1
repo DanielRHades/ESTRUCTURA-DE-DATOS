@@ -1,0 +1,16 @@
+
+package ventana;
+
+import javax.swing.JFrame;
+
+public class Ventana {
+
+    public static void main(String[] args) {
+        JFrame w= new JFrame("Mi primer frame");
+        w.setSize(500,400);
+        w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        w.setVisible(true);
+        w.setBounds(600,100,500,200);
+    }
+    
+}
