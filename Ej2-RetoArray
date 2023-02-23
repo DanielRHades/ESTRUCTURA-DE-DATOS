@@ -1,0 +1,21 @@
+package ejercicio2;
+
+import javax.swing.JOptionPane;
+import java.util.Random;
+        
+public class Ejercicio2 {
+
+    public static void main(String[] args) {
+        String xs = JOptionPane.showInputDialog("Dame la primera dimension de tu array: ");
+        String ys = JOptionPane.showInputDialog("Dame la segunda dimension de tu array: ");
+        int x = Integer.parseInt(xs);
+        int y = Integer.parseInt(ys);
+        int cosas[][] = new int[x][y];
+        int i;
+        for (i = 0; i < cosas.length; i++) {
+            cosas[i] = (int)(rnd.nextDouble() * 100);
+        }
+
+    }
+
+}
