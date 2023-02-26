@@ -1,0 +1,19 @@
+import javax.swing.*;
+
+public class Array_Ejercicio3 {
+    public static void main(String[] args) {
+        String xs = JOptionPane.showInputDialog("Dame el largo y ancho de tu arreglo: ");
+        int x = Integer.parseInt(xs);
+        int cosas[][] = new int[x][x];
+        int random = 0;
+        int random2 = 0;
+        double multi;
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < x; j++) {
+                cosas[i][j] = (int) ((Math.random() * (3 - (-3)))) + (-3);
+                System.out.print(cosas[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
