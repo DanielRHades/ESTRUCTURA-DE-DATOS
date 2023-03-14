@@ -1,0 +1,47 @@
+
+package mother;
+
+import javax.swing.JOptionPane;
+
+
+
+public class Mother {
+
+    public static void main(String[] args) {
+        String n1s = JOptionPane.showInputDialog("Por favor escriba un numero: ");
+        String n2s = JOptionPane.showInputDialog("Por favor escriba un numero: ");
+        String n3s = JOptionPane.showInputDialog("Por favor escriba un numero: ");
+        float n1 = Float.parseFloat(n1s);
+        float n2 = Float.parseFloat(n2s);
+        float n3 = Float.parseFloat(n3s);
+        int n4= (int)(Math.random()*10+1);
+        Operation o1 = new Operation();
+        float resultado= o1.multi(n1,n2,n3);
+        System.out.println(resultado);
+        System.out.println(n4);
+
+       
+           
+
+
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package mother;
+
+public class Operation {
+
+    public static float suma(float n1, float n2) {
+        float sumar;
+        sumar = n1 + n2;
+        return sumar;
+    }
+
+    public static float multi(float n1, float n2, float n3) {
+        float multip;
+        multip = n1* n2* n3;
+        return multip;
+
+    }
+
+}
